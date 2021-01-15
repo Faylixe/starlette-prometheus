@@ -9,6 +9,7 @@ jobs:
   publish:
     name: Publish package
     runs-on: ubuntu-latest
+    environment: staging_environment
     container:
       image: python:3.8
     steps:
