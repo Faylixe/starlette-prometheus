@@ -1,8 +1,11 @@
 # Starlette Prometheus
-[![Build Status](https://github.com/perdy/starlette-prometheus/workflows/Continuous%20Integration/badge.svg)](https://github.com/perdy/starlette-prometheus/actions)
-[![codecov](https://codecov.io/gh/perdy/starlette-prometheus/branch/master/graph/badge.svg)](https://codecov.io/gh/perdy/starlette-prometheus)
-[![Package Version](https://img.shields.io/pypi/v/starlette-prometheus?logo=PyPI&logoColor=white)](https://pypi.org/project/starlette-prometheus/)
-[![PyPI Version](https://img.shields.io/pypi/pyversions/starlette-prometheus?logo=Python&logoColor=white)](https://pypi.org/project/starlette-prometheus/)
+[![Build Status](https://github.com/Faylixe/starlette-prometheus/workflows/Continuous%20Integration/badge.svg)](https://github.com/Faylixe/starlette-prometheus/actions)
+[![Package Version](https://img.shields.io/pypi/v/starlette-prometheus-middleware?logo=PyPI&logoColor=white)](https://pypi.org/project/starlette-prometheus-middleware/)
+[![PyPI Version](https://img.shields.io/pypi/pyversions/starlette-prometheus-middleware?logo=Python&logoColor=white)](https://pypi.org/project/starlette-prometheus-middleware/)
+
+> :warning: This repository is a fork of the original
+> [starlette_prometheus middleware](https://github.com/perdy/starlette-prometheus),
+> using upgraded dependencies.
 
 ## Introduction
 
@@ -16,7 +19,7 @@ Prometheus integration for Starlette.
 ## Installation
 
 ```console
-$ pip install starlette-prometheus
+$ pip install starlette-prometheus-middleware
 ```
 
 ## Usage

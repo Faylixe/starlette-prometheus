@@ -54,3 +54,5 @@ node_modules
 
 ## Demo & Tests
 *.db
+.venv
+.mypy_cache

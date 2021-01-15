@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test:
+    name: Test (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [3.6, 3.7, 3.8, 3.9]
+    container:
+      image: python:${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@master
+      - name: Install requirements
+        run: |
+          pip install poetry --upgrade
+          poetry install --no-root
+      - name: Code quality checks
+        run: |
+          poetry run black starlette_prometheus tests --check
+          poetry run isort starlette_prometheus tests --check
+      - name: Test with pytest
+        run: poetry run pytest tests/

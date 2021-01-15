@@ -6,10 +6,10 @@ build-backend = "poetry.masonry.api"
 name = "starlette-prometheus-middleware"
 version = "0.9.0"
 description = "Prometheus integration for Starlette"
-authors = ["José Antonio Perdiguero López <perdy@perdy.io>", "Félix Voituret <felix@voituret.fr>]
+authors = ["José Antonio Perdiguero López <perdy@perdy.io>", "Félix Voituret <felix@voituret.fr>"]
 license = "GPL-3.0+"
 readme = "README.md"
-repository = "https://github.com/PeRDy/starlette-prometheus"
+repository = "https://github.com/faylixe/starlette-prometheus"
 keywords = ["starlette", "prometheus", "metrics"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -27,26 +27,14 @@ starlette = ">=0.12.2"
 prometheus_client = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.6"
-pytest-xdist = "^1.22"
-pytest-cov = "^2.5"
-tox = "^3.0"
-clinner = "^1.10"
-ipython = "^6.4"
-requests = "^2.19"
-ipdb = "^0.11.0"
-black = {version = "^19.3b0",allow-prereleases = true}
-isort = "^4.3"
-flake8 = "^3.7"
+isort = "^5.7.0"
+black = "^20.8b1"
+mypy = "^0.790"
 
-[tool.black]
-line-length = 120
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.tox
-  | build
-  | dist
-)/
-'''
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+minversion = 3
+addopts = "--junitxml=test-results/pytest/results.xml --cov-report=xml --cov-report=term-missing --cov-config=setup.cfg --cov=."
