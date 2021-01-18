@@ -1,5 +1,5 @@
 # Starlette Prometheus
-[![Build Status](https://github.com/Faylixe/starlette-prometheus/workflows/Continuous%20Integration/badge.svg)](https://github.com/Faylixe/starlette-prometheus-middleware/actions)
+[![Publish to PyPi](https://github.com/Faylixe/starlette-prometheus/workflows/Publish%20to%20PyPi/badge.svg?branch=master)](https://github.com/Faylixe/starlette-prometheus-middleware/actions)
 [![Package Version](https://img.shields.io/pypi/v/starlette-prometheus-middleware?logo=PyPI&logoColor=white)](https://pypi.org/project/starlette-prometheus-middleware/)
 [![PyPI Version](https://img.shields.io/pypi/pyversions/starlette-prometheus-middleware?logo=Python&logoColor=white)](https://pypi.org/project/starlette-prometheus-middleware/)
 
